@@ -1825,39 +1825,39 @@ input[type=number] {
     box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
 }
 
-.btn-warning {
+.btn-secondary {
     color: #ffffff;
     background-color: #2d7d7d;
     border-color: #2d7d7d;
 }
 
-.btn-warning:hover {
+.btn-secondary:hover {
     color: #ffffff;
     background-color: #232449;
     border-color: #232449;
 }
 
-.btn-warning:focus, .btn-warning.focus {
+.btn-secondary:focus, .btn-secondary.focus {
     color: #ffffff;
     background-color: #232449;
     border-color: #232449;
     box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
 }
 
-.btn-warning.disabled, .btn-warning:disabled {
+.btn-secondary.disabled, .btn-secondary:disabled {
     color: #ffffff;
     background-color: #2d7d7d;
     border-color: #2d7d7d;
 }
 
-.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
-.show > .btn-warning.dropdown-toggle {
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
     color: #ffffff;
     background-color: #232449;
     border-color: #232449;
 }
 
-.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
-.show > .btn-warning.dropdown-toggle:focus {
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
 }
