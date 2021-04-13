@@ -18,9 +18,9 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
+  --primary:#232449;
+  --secondary:#2d7d7d;
+  --success:#85dede;
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
@@ -4340,8 +4340,8 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
+  font-size: 1.8rem;
+  line-height: 1em;
   white-space: nowrap;
 }
 
@@ -6781,7 +6781,10 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #2d7d7d !important;
+}
+img.brand-logo{
+  width: 120px;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,

@@ -323,6 +323,7 @@ i.da-chat-inactive:hover {
 }
 
 .dabackicon {
+    color:#fff !important;
     background: none;
     cursor: pointer;
     border: none;

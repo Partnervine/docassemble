@@ -2635,7 +2635,7 @@ def make_navbar(status, steps, show_login, chat_info, debug_mode, index_params, 
         url = '#'
         target = ''
     navbar += """\
-        <a id="dapagetitle" class="navbar-brand danavbar-title dapointer" href=""" + '"' + url + '"' + target + """><span class="d-none d-md-block">""" + status.display_title + """</span><span class="d-block d-md-none">""" + status.display_short_title + """</span></a>
+        <a id="dapagetitle" class="navbar-brand danavbar-title dapointer" href=""" + '"' + url + '"' + target + """><img src="/playgroundstatic/default/1/partner-wine-logo.svg" class="brand-logo"><span class="d-none d-md-inline">""" + status.display_title + """</span><span class="d-inline d-md-none">""" + status.display_short_title + """</span></a>
 """
     help_message = word("Help is available")
     help_label = None
