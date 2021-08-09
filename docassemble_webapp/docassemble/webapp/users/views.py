@@ -272,6 +272,10 @@ def user_profile_page():
     if request.method == 'POST' and form.validate():
         if current_user.has_roles(['admin', 'developer']):
             form.populate_obj(current_user)
+        elif current_user.has_roles(['advocate']):
+            current_user.first_name = form.first_name.data
+            current_user.last_name = form.last_name.data
+            current_user.organization = form.organization.data
         else:
             current_user.first_name = form.first_name.data
             current_user.last_name = form.last_name.data

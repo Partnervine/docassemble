@@ -26,6 +26,8 @@ class UserModel(db.Model, UserMixin):
     pypi_password = db.Column(db.String(255), nullable=True)
     modified_at = db.Column(db.DateTime())
     last_login = db.Column(db.DateTime())
+    #check_mail = db.Column('check_mail', db.Boolean(), nullable=False, server_default='0')
+    #check_terms = db.Column('check_terms', db.Boolean(), nullable=False, server_default='0')
     #email_is_phone_number = db.Column(db.Boolean(), nullable=True, server_default='0')
 
 class UserAuthModel(db.Model, UserMixin):

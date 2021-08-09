@@ -21,6 +21,9 @@
             {{ form.hidden_tag() }}
             {{ render_field(form.first_name) }}
             {{ render_field(form.last_name) }}
+            {%- if (not current_user.is_anonymous) and current_user.has_roles(['admin', 'developer', 'advocate']) %}
+            {{ render_field(form.organization) }}
+            {%- endif %}
             {%- if current_user.social_id and current_user.social_id.startswith('phone$') %}
             {{ render_field(form.email) }}
             {%- endif %}
@@ -29,7 +32,6 @@
             {{ render_field(form.subdivisionfirst) }}
             {{ render_field(form.subdivisionsecond) }}
             {{ render_field(form.subdivisionthird) }}
-            {{ render_field(form.organization) }}
             {{ render_field(form.language) }}
             {{ render_field(form.timezone) }}
             {%- if config['ENABLE_PLAYGROUND'] and config['USE_PYPI'] %}
