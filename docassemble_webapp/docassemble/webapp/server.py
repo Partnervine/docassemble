@@ -13455,6 +13455,20 @@ def decode_dict(the_dict):
         out_dict[k.decode()] = v.decode()
     return out_dict
 
+@app.route('/interview-sessions', methods=['GET'])
+@login_required
+@roles_required(['admin'])
+def interview_session_stats():
+    if STATS:
+        num_sessions = r.get('da:stats:sessions').decode()
+    else:
+        num_sessions = 0
+
+    response = make_response(render_template('pages/stats.html', version_warning=None, num_sessions=num_sessions, bodyclass='daadminbody', tab_title=word('Statistics Collection'), page_title=word('Statistics Collection')), 200)
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'
+    return response
+
+
 @app.route('/monitor', methods=['GET', 'POST'])
 @login_required
 @roles_required(['admin', 'advocate'])

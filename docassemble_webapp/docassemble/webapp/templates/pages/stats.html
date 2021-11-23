@@ -1,0 +1,8 @@
+{% extends 'base_templates/flask_extra_wide_base.html' %}
+
+{% block content %}
+<div class="monitorcontrols">
+<h4>{{ word("Interview Sessions: ") }}</h4>
+<h3>{{ word("Number of interview sessions initiated: ") }}<span class="badge badge-primary">{{num_sessions}}</span></h3>
+</div>
+{% endblock %}
